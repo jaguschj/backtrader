@@ -133,7 +133,7 @@ class SuperTrendStrategy(bt.Strategy):
             #self.log('Buy:  %.2f'%(self.datas[0].close[0]))
         if self.position:
             if self.sellsig > 0:
-                self.order = self.sell()
+                self.order = self.close()
                 #self.log('Sell: %.2f'%self.datas[0].close[0])
                 #print(self.position)
 
